@@ -1,0 +1,26 @@
+.admin {
+  padding: 20px;
+}
+
+.admin h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.admin .menu {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.admin .menu a {
+  padding: 12px 20px;
+  background-color: #2196f3;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.admin .menu a:hover {
+  background-color: #1976d2;
+}

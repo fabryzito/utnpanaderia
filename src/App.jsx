@@ -1,35 +1,56 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route } from "react-router-dom";
+
+// Componentes
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
+// Páginas
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Admin from "./pages/Admin";
+import Productos from "./pages/Productos";
+import ProductoDetalle from "./pages/ProductoDetalle";
+import Usuarios from "./pages/Usuarios";
+import UsuarioDetalle from "./pages/UsuarioDetalle";
+import FormProducto from "./pages/FormProducto";
+import FormUsuario from "./pages/FormUsuario";
+
+// Rutas protegidas
+import ProtectedRoute from "./routes/ProtectedRoute";
+
+// Estilos
+import "./styles/App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <main className="flex-grow p-4">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+
+          {/* Rutas protegidas */}
+          <Route element={<ProtectedRoute />}>
+            <Route path="/admin" element={<Admin />} />
+
+            <Route path="/productos" element={<Productos />} />
+            <Route path="/productos/:id" element={<ProductoDetalle />} />
+            <Route path="/productos/nuevo" element={<FormProducto />} />
+            <Route path="/productos/editar/:id" element={<FormProducto />} />
+
+            <Route path="/usuarios" element={<Usuarios />} />
+            <Route path="/usuarios/:id" element={<UsuarioDetalle />} />
+            <Route path="/usuarios/nuevo" element={<FormUsuario />} />
+            <Route path="/usuarios/editar/:id" element={<FormUsuario />} />
+          </Route>
+        </Routes>
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
+
+

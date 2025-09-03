@@ -1,0 +1,28 @@
+{
+  "productos": [
+    {
+      "id": "2",
+      "nombre": "Medialuna",
+      "precio": 80
+    },
+    {
+      "id": "b9c1",
+      "nombre": "Pan Francés",
+      "precio": "1200"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "nombre": "Admin",
+      "email": "admin@panaderia.com",
+      "password": "1234"
+    },
+    {
+      "id": "cd61",
+      "nombre": "Franco",
+      "email": "franco@gmail.com",
+      "password": "fran123"
+    }
+  ]
+}
