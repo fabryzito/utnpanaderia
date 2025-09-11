@@ -14,7 +14,7 @@
   display: inline-block;
   margin-bottom: 20px;
   padding: 8px 12px;
-  background-color: #4caf50;
+  background-color: #216224;
   color: white;
   text-decoration: none;
   border-radius: 4px;
@@ -52,15 +52,15 @@
 }
 
 .productos li .acciones .btn-link {
-  background-color: #2196f3;
+  background-color: #145488;
 }
 
 .productos li .acciones .btn-warning {
-  background-color: #ff9800;
+  background-color: #906018f4;
 }
 
 .productos li .acciones .btn-danger {
-  background-color: #f44336;
+  background-color: #9f2219;
 }
 
 

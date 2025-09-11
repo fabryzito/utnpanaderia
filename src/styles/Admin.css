@@ -1,26 +1,53 @@
+/* admin.css */
+
+/* Estilos generales del contenedor */
 .admin {
-  padding: 20px;
+  background-color: #f0f4f8; /* Color de fondo claro y neutro */
+  min-height: calc(100vh - 80px); /* Altura mínima para ocupar el espacio */
+  padding: 40px 20px; /* Aumenta el padding para más espacio */
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; /* Mejora la tipografía */
+  color: #333; /* Color de texto más oscuro */
 }
 
+/* Encabezado del panel */
 .admin h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 2.5rem; /* Tamaño de fuente más grande */
+  color: #1a202c; /* Color de encabezado más oscuro */
+  text-align: center; /* Centra el título */
+  margin-bottom: 30px; /* Más espacio debajo del título */
+  font-weight: 600; /* Fuente semigruesa */
 }
 
-.admin .menu {
+/* Contenedor de los enlaces del menú */
+.admin-menu {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  justify-content: center; /* Centra los botones en el contenedor */
+  gap: 25px; /* Aumenta el espacio entre los botones */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan si la pantalla es pequeña */
 }
 
-.admin .menu a {
-  padding: 12px 20px;
-  background-color: #2196f3;
+/* Estilos de los botones del menú */
+.admin-menu .btn-primary {
+  padding: 15px 30px; /* Aumenta el padding para un mejor toque */
+  background-color: #4CAF50; /* Un verde vibrante, más atractivo */
   color: white;
-  border-radius: 6px;
-  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px; /* Bordes más suaves */
+  text-decoration: none; /* Elimina el subrayado */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  text-align: center;
 }
 
-.admin .menu a:hover {
-  background-color: #1976d2;
+/* Efecto al pasar el mouse (hover) */
+.admin-menu .btn-primary:hover {
+  background-color: #45a049; /* Verde más oscuro al pasar el mouse */
+  transform: translateY(-3px); /* Efecto de "elevación" para un toque interactivo */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para el estado activo (si se implementa) */
+.admin-menu .btn-primary:active {
+  transform: translateY(0); /* Vuelve a la posición original al hacer clic */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

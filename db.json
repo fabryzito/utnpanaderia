@@ -3,12 +3,32 @@
     {
       "id": "2",
       "nombre": "Medialuna",
-      "precio": 80
+      "precio": "450",
+      "imagen": "https://tse3.mm.bing.net/th/id/OIP.kqMs5uk-F2RlLTFFU65EfQHaEH?cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3"
     },
     {
       "id": "b9c1",
       "nombre": "Pan Francés",
-      "precio": "1200"
+      "precio": 1200,
+      "imagen": "https://www.recetasdesbieta.com/wp-content/uploads/2018/08/pan-frances-2-1-420x237.jpg"
+    },
+    {
+      "id": "c3e8",
+      "nombre": "Pan de Miga",
+      "precio": 2500,
+      "imagen": "https://th.bing.com/th/id/R.c53061a4f5b844c478a25fe8b7d2fe4a?rik=DkcoxavMNpvOpQ&pid=ImgRaw&r=0"
+    },
+    {
+      "id": "b5e3",
+      "nombre": "Alfajor de maicena",
+      "precio": "800",
+      "imagen": "https://elgourmet.s3.amazonaws.com/recetas/share/alfaj_hgMHx6wseQRprzkq4ItTPGi5BvS1jN.png"
+    },
+    {
+      "id": "3459",
+      "nombre": "Tortillas",
+      "precio": "200",
+      "imagen": "https://4.bp.blogspot.com/-PMFaPo7C3F8/V2k6mv65EGI/AAAAAAAAncs/WtqwIoMLBske18G2lFUWf2GfsQi-zTZ0QCPcB/s1600/criollitos.jpg"
     }
   ],
   "usuarios": [
@@ -16,13 +36,13 @@
       "id": "1",
       "nombre": "Admin",
       "email": "admin@panaderia.com",
-      "password": "1234"
+      "password": "123"
     },
     {
-      "id": "cd61",
-      "nombre": "Franco",
-      "email": "franco@gmail.com",
-      "password": "fran123"
+      "id": "cec4",
+      "nombre": "Matias Ochoa",
+      "email": "matias@gmail.com",
+      "password": "1234"
     }
   ]
 }
